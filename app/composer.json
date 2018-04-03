@@ -21,12 +21,17 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.1",
+        "drupal/pathauto": "^1.1",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
+        "behat/behat": "^3.4",
+        "behat/mink": "^1.7",
+        "behat/mink-extension": "^2.3",
+        "drupal/drupal-extension": "^3.4",
         "webflo/drupal-core-require-dev": "~8.5.1"
     },
     "conflict": {

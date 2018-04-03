@@ -11,11 +11,22 @@ services:
   drupal:
     depends_on:
       - db
-    build: .
+    #build: .
+    image: d8:latest
     ports:
       - "8080:80"
     volumes:
       - ./app:/app
+    deploy:
+      replicas: 2
+      resources:
+        limits: 
+          cpus: "0.1"
+          memory: 50M
+      restart_policy: 
+        condition: on-failure
     restart: always
 volumes:
   db_data:
+       external:
+         name: continousblog_db_data

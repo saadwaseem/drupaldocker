@@ -16,6 +16,6 @@ RUN wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/down
 RUN rm -rf /var/www/html/*
 
 COPY apache-drupal.conf /etc/apache2/sites-enabled/000-default.conf
-
+ADD ./app /app
 WORKDIR /app
 
